@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>    
+    <script src="script.js"></script> 
+</head>
+<style>
+    
+    .form{
+        position:inherit;
+        display: inline-block;
+        background-color: rgb(128, 138, 138);
+        margin-left: 25%;
+        margin-top: 10px;
+        
+    }
+    .button-group {
+        display: inline-block;
+        height: 40%;
+        background-color: rgb(128, 138, 138);
+        padding: 20px;
+        margin: 0 29%;
+        border: 2px solid black;
+        border-radius: 30px;
+
+    }
+   
+     h3 {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 30px 10px;
+        width: 300px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        color: black;
+     }
+
+    #fnum,#snum{
+            margin: 10px 10px;
+            width: 300px;
+            height: 20px;
+        
+        }
+
+    button{
+            margin: 10px 10px;
+            border-radius: 5px;
+            border-color: black;
+            width: 100px;
+            height: 30px;
+        }
+    #result{
+        text-align: center;
+        padding: 20px;
+        margin:10px 20px;
+    }
+</style>
+
+<body>
+
+        <div class="form">
+                <h3> Enter first number </h3>
+    
+                <input type="number" id="fnum" name="fnum" size="50"><br><br>
+            </div>
+        <div class="form">
+               
+                <h3> Enter Second number </h3>
+                <input type="number" id="snum" name="snum" size="50" ><br><br>
+            </div>
+                <p id='result'></p>
+        <div class="button-group">
+                    <button type="submit" id="add" value="+" > + Add</button>
+                    <button type="submit" id="subtract" value="-" > - Subtract</button>
+                    <button type="submit" id= "multiply" value="*" >* Multiply</button>
+                    <button type="submit" id="divide" value="/" >/ Divide</button>
+             </div>
+
+    </div>
+</body>
+</html>
