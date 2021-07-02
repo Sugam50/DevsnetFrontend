@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book tickets</title>
+</head>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: burlywood;
+}
+.container{
+
+    background-color: chocolate;
+    width: 953px;
+    height: 650px;
+    margin: 50px 10% 50px 300px;
+    padding: 10px;
+    border: 1px solid burlywood;
+}
+.heads1,.heads2{
+    font-size: xx-large;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 100px 5px 0px 37%;
+}
+.box{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: brown;
+    margin:2.5px;
+}
+.box:hover{
+ background-color: rgb(163, 63, 63);
+ cursor:pointer;
+}
+.add{
+    background-color: rgb(68, 22, 22);
+}
+
+
+</style>
+
+<body>
+    <div class="heads1">
+        <h5> Seats occupied :</h5>
+        <p class="select"> 0</p>
+    </div>
+    <div class="heads2" style="margin-left: 50px;">
+        <h5> Remaining seats :</h5>
+        <p class="remain"> 36</p>
+    </div>
+    <div class="container" id="container">
+        <!-- <div class="box"></div> -->
+    </div>
+</body>
+<script>
+    const m=  document.getElementById("container")
+    
+    for(let i=0;i<36;i++)
+    {   
+            var div = document.createElement("div");
+            div.classList.add("box");
+            div.innerHTML=i+1;
+            m.appendChild(div); 
+    }
+
+    var boxes = document.querySelectorAll("div.box");
+    var selected=document.querySelector("p.select").innerHTML;
+    var remaining=document.querySelector("p.remain").innerHTML;
+
+   parseInt(selected);
+   parseInt(remaining);
+
+    
+    boxes.forEach(box=>{
+        box.addEventListener('click',()=>{
+            if(box.classList.contains("add")){
+              
+                box.classList.remove("add");
+                selected--;
+                remaining++;
+                document.querySelector("p.select").innerHTML=selected;
+                document.querySelector("p.remain").innerHTML=remaining;
+
+                
+
+            }
+            else{
+
+                box.classList.add("add")              
+                selected++;
+                remaining--;
+                document.querySelector("p.select").innerHTML=selected;
+                document.querySelector("p.remain").innerHTML=remaining;
+
+            }
+        })
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</script>
+</html>
