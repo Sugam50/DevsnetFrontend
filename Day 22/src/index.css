@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.imagememe{
+  height:300px;
+  width:300px;
+  background-size:cover;
+  border: 20px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imgselected{
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:90%;
+ width: 500px;
+ height: 500px;
+}
+
+.meme{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.inputs{
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-evenly;
+}
