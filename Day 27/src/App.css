@@ -1,0 +1,55 @@
+input,button{
+  padding: 0.5rem;
+ 
+}
+.App{
+
+  width: 50%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin: auto;
+}
+.AddTodo{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 15%;
+  justify-content: space-between;
+  border: 1px dotted gray;
+  padding: 1.5rem;
+  border-radius: 50px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #cccccc,
+               -20px -20px 60px #f4f4f4;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  width: 50%;
+  height: 75%;
+  overflow: auto;
+}
+.list::-webkit-scrollbar{
+  width: 0;
+}
+
+.todo_list{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 4.5rem;
+  padding: 1rem;
+  align-items: center;
+  margin: 0.5rem;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #f4e7e7, #cdc2c2);
+  box-shadow:  4px 4px 9px #5b5656,
+              -4px -4px 9px #ffffff;
+}
